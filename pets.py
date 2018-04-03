@@ -11,7 +11,9 @@ describe_pet(pet_name="harry", animal_type="hamster")
 
 
 # Default value for a function.
-def simple_function(arg1, arg2='default value'):
-    print("arg1: " + arg1 + "; arg2: " + arg2)
+def describe_pet_bis(animal_type, pet_name='doggo'):
+    """ Display information about a pet. """
+    print("animal type: " + animal_type + "; name: " + pet_name)
 
-simple_function("toto")
+describe_pet_bis("dog")
+describe_pet_bis(animal_type="cat")
